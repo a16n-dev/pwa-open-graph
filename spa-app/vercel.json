@@ -4,5 +4,11 @@
       "source": "/(.*)",
       "destination": "/index.html"
     }
+  ],
+  "redirects": [
+    {
+      "source":  "/product/:id",
+      "destination":  "https://pwa-open-graph-next.vercel.app/product/:id"
+    }
   ]
 }
