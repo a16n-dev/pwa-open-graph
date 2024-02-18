@@ -2,6 +2,8 @@ import { CssBaseline, CssVarsProvider, extendTheme } from "@mui/joy";
 import { Outlet } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { HelmetProvider } from "react-helmet-async";
+import { useEffect } from "react";
+import Cookies from "universal-cookie";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +45,12 @@ const theme = extendTheme({
 });
 
 const RootPage = () => {
+  useEffect(() => {
+    const cookies = new Cookies(null, { path: "/" });
+
+    cookies.set("visited", "1");
+  }, []);
+
   return (
     <HelmetProvider>
       <CssVarsProvider theme={theme} defaultMode={"light"}>

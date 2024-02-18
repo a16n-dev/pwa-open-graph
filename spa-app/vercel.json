@@ -8,7 +8,14 @@
   "redirects": [
     {
       "source":  "/product/:id",
-      "destination":  "https://pwa-open-graph-next.vercel.app/product/:id"
+      "destination":  "https://pwa-open-graph-next.vercel.app/product/:id",
+      "missing": [
+        {
+          "type": "cookie",
+          "key": "visited",
+          "value": "1"
+        }
+      ]
     }
   ]
 }
