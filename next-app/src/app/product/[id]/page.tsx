@@ -15,7 +15,7 @@ export async function generateMetadata(
   const product = await Api.getProductById(params.id!);
 
   if(!product){
-    throw new Error('Product not found');
+   return {}
   }
 
   return {
