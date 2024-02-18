@@ -5,6 +5,9 @@ import Api from "@/api";
 type Props = {
   params: { id: string }
 }
+
+export const revalidate = 3600
+
 export async function generateMetadata(
   { params }: Props,
 ): Promise<Metadata> {
