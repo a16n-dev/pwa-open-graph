@@ -9,7 +9,11 @@ export async function generateMetadata(
   { params }: Props,
 ): Promise<Metadata> {
 
-  const product = await Api.getProductById(Number(params.id));
+  const product = await Api.getProductById(params.id!);
+
+  if(!product){
+    throw new Error('Product not found');
+  }
 
   return {
     title: product.name,

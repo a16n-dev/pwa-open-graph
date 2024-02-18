@@ -21,9 +21,7 @@ interface ProductPageProps {}
 const ProductPage = ({}: ProductPageProps) => {
   const { id } = useParams();
 
-  const { data } = useQuery(["products", id], () =>
-    Api.getProductById(Number(id)),
-  );
+  const { data } = useQuery(["products", id], () => Api.getProductById(id!));
 
   return (
     <Container sx={{ py: 6 }}>

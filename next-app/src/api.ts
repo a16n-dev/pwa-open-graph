@@ -2,7 +2,7 @@
  * This is a mock API client that simulates fetching product data from a bakery from the server
  */
 interface ProductData {
-  id: number;
+  id: string;
   name: string;
   price: number;
   imageUrl: string;
@@ -11,7 +11,7 @@ interface ProductData {
 
 const api: ProductData[] = [
   {
-    id: 1,
+    id: "sourdough-bread",
     name: "Sourdough Bread",
     price: 4.49,
     description:
@@ -19,7 +19,7 @@ const api: ProductData[] = [
     imageUrl: "https://images.unsplash.com/photo-1549931319-a545dcf3bc73",
   },
   {
-    id: 2,
+    id: "baguette",
     name: "Baguette",
     price: 2.99,
     description:
@@ -27,7 +27,7 @@ const api: ProductData[] = [
     imageUrl: "https://images.unsplash.com/photo-1568471173242-461f0a730452",
   },
   {
-    id: 3,
+    id: "glazed-donut",
     name: "Glazed Donut",
     price: 1.69,
     description:
@@ -35,7 +35,7 @@ const api: ProductData[] = [
     imageUrl: "https://images.unsplash.com/photo-1573050329989-9c2509328687",
   },
   {
-    id: 4,
+    id: "croissant",
     name: "Croissant",
     price: 1.99,
     description:
@@ -49,7 +49,7 @@ const Api = {
     new Promise<ProductData[]>((resolve) => {
       setTimeout(() => resolve(api), 500);
     }),
-  getProductById: (id: number) =>
+  getProductById: (id: string) =>
     new Promise<ProductData>((resolve, reject) => {
       const product = api.find((p) => p.id === id);
       if (product) {
