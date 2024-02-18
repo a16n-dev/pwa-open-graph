@@ -12,7 +12,13 @@
     },
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/index.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "pwa-open-graph-spa.vercel.app"
+        }
+      ]
     }
   ]
 }
