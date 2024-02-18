@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source":  "/product/:id",
-      "destination":  "https://pwa-open-graph-next.vercel.app/product/:id",
+      "destination":  "https://pwa-open-graph-next.vercel.app/product/:id"
     },
     { "source": "/(.*)", "destination": "/index.html" }
   ]
