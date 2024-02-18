@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 /**
  * This is a utility page used for client-side redirects, in order to bypass URL rewrites in the vercel.json config.
- * For example, if example.com/products/1 is rewritten, we can instead use example.com/link?url=/product/1 to bypass
+ * For example, if `example.com/products/1` is rewritten, we can instead use `example.com/link?url=/product/1` to bypass
  * the rewrite and navigate to the correct page.
  */
 const LinkPage = () => {
