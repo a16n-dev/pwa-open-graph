@@ -1,24 +1,14 @@
 {
   "rewrites": [
     {
-      "source":  "/product/:id",
-      "destination":  "https://pwa-open-graph-next.vercel.app/product/:id",
-      "has": [
-        {
-          "type": "host",
-          "value": "pwa-open-graph-spa.vercel.app"
-        }
-      ]
-    },
-    {
       "source": "/(.*)",
-      "destination": "/index.html",
-      "has": [
-        {
-          "type": "host",
-          "value": "pwa-open-graph-spa.vercel.app"
-        }
-      ]
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source":  "/product/:id",
+      "destination":  "https://pwa-open-graph-next.vercel.app/product/:id"
     }
   ]
 }
