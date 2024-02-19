@@ -17,7 +17,7 @@ export async function GET(request: Request) {
           style={{
             height: '100%',
             width: '100%',
-
+            display: 'flex'
           }}
         >
           <img src={`${image}`} width="100%" height="100%" style={{objectFit: "cover", objectPosition: "center"}}/>
