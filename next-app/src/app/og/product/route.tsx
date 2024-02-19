@@ -20,7 +20,7 @@ export async function GET(request: Request) {
             display: 'flex'
           }}
         >
-          <img src={`${image}`} width="100%" height="100%" style={{objectFit: "cover", objectPosition: "center"}}/>
+          <img alt={""} src={`${image}`} width="100%" height="100%" style={{objectFit: "cover", objectPosition: "center"}}/>
           <svg viewBox="0 0 256 256" width="256" height="256" style={{color: "white", position: "absolute", left: 24, bottom: 24}}>
             <path
               fillRule="evenodd"
