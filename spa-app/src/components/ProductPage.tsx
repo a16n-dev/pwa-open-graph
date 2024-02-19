@@ -15,6 +15,7 @@ import {
 } from "@mui/joy";
 import Logo from "./Logo";
 import { Helmet } from "react-helmet-async";
+import ShareButton from "./ShareButton";
 
 interface ProductPageProps {}
 
@@ -60,13 +61,12 @@ const ProductPage = ({}: ProductPageProps) => {
                   </Typography>
                 </Stack>
                 <Typography level={"body-lg"}>{data.description}</Typography>
-                <Button
-                  variant={"outlined"}
-                  sx={{ alignSelf: "flex-start" }}
-                  size={"lg"}
-                >
-                  Add to cart
-                </Button>
+                <Stack spacing={4}>
+                  <Button variant={"outlined"} size={"lg"}>
+                    Add to cart
+                  </Button>
+                  <ShareButton />
+                </Stack>
               </Stack>
             </Grid>
           </Grid>
