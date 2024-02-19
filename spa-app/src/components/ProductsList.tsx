@@ -23,7 +23,7 @@ const ProductsList = () => {
   return (
     <Container sx={{ py: 4 }} component={"main"}>
       <Helmet>
-        <title>{"All Products"}</title>
+        <title>{"All Products | Flourish Bakery Co."}</title>
       </Helmet>
       <Stack sx={{ alignItems: "center" }}>
         <Logo />

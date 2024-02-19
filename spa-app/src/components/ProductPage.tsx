@@ -32,7 +32,7 @@ const ProductPage = ({}: ProductPageProps) => {
       {data && (
         <>
           <Helmet>
-            <title>{data.name}</title>
+            <title>{`${data.name} | Flourish Bakery Co.`}</title>
           </Helmet>
           <Breadcrumbs sx={{ pb: 4 }}>
             <Link component={NavLink} to={"/products"} color="neutral">
