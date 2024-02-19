@@ -75,9 +75,9 @@ const Api = {
     new Promise<ProductData>((resolve, reject) => {
       const product = api.find((p) => p.id === id);
       if (product) {
-        setTimeout(() => resolve(product), 500);
+      resolve(product)
       } else {
-        setTimeout(() => reject("Product not found"), 500);
+        reject("Product not found")
       }
     }),
 };

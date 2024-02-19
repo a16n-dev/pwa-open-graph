@@ -50,15 +50,20 @@ const api: ProductData[] = [
     id: "cinnamon-roll",
     name: "Cinnamon Roll",
     price: 2.99,
-    description: "Indulge in the irresistible comfort of our freshly baked cinnamon rolls. Crafted with care, each roll features a perfect swirl of cinnamon-sugar goodness, delicately encased in our soft, pillowy dough. As you bite into the warm, fragrant layers, the rich aroma of cinnamon fills the air, enticing your senses. Finished with a generous drizzle of creamy icing, our cinnamon rolls are a delightful treat, perfect for pairing with your morning coffee or enjoying as a sweet afternoon indulgence. Treat yourself to the ultimate in baked goodness with our lovingly crafted cinnamon rolls, guaranteed to satisfy your cravings.",
-    imageUrl: "https://images.unsplash.com/photo-1593872570782-6c6e7069e67e?auto=format&w=800",
+    description:
+      "Indulge in the irresistible comfort of our freshly baked cinnamon rolls. Crafted with care, each roll features a perfect swirl of cinnamon-sugar goodness, delicately encased in our soft, pillowy dough. As you bite into the warm, fragrant layers, the rich aroma of cinnamon fills the air, enticing your senses. Finished with a generous drizzle of creamy icing, our cinnamon rolls are a delightful treat, perfect for pairing with your morning coffee or enjoying as a sweet afternoon indulgence. Treat yourself to the ultimate in baked goodness with our lovingly crafted cinnamon rolls, guaranteed to satisfy your cravings.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1593872570782-6c6e7069e67e?auto=format&w=800",
   },
   {
     id: "lemon-tart",
     name: "Lemon Tart",
     price: 23.99,
-    description: "Experience a burst of citrusy delight with our exquisite lemon tart. Nestled within a buttery, flaky crust, each tart is filled with a smooth and tangy lemon curd that's perfectly balanced in sweetness. The vibrant yellow hue of the filling hints at the refreshing flavor awaiting your taste buds. With every bite, you'll encounter a harmonious blend of zesty lemon and delicate pastry, leaving a lingering sensation of pure bliss. Topped with a dusting of powdered sugar or a dollop of whipped cream, our lemon tart is a refreshing dessert sensation, sure to brighten any occasion. Treat yourself to a slice of sunshine with our delectable lemon tart, crafted with love and care in our bakery.",
-    imageUrl: "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&w=800"}
+    description:
+      "Experience a burst of citrusy delight with our exquisite lemon tart. Nestled within a buttery, flaky crust, each tart is filled with a smooth and tangy lemon curd that's perfectly balanced in sweetness. The vibrant yellow hue of the filling hints at the refreshing flavor awaiting your taste buds. With every bite, you'll encounter a harmonious blend of zesty lemon and delicate pastry, leaving a lingering sensation of pure bliss. Topped with a dusting of powdered sugar or a dollop of whipped cream, our lemon tart is a refreshing dessert sensation, sure to brighten any occasion. Treat yourself to a slice of sunshine with our delectable lemon tart, crafted with love and care in our bakery.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&w=800",
+  },
 ];
 
 const Api = {
@@ -70,9 +75,9 @@ const Api = {
     new Promise<ProductData>((resolve, reject) => {
       const product = api.find((p) => p.id === id);
       if (product) {
-        setTimeout(() => resolve(product), 500);
+        resolve(product)
       } else {
-        setTimeout(() => reject("Product not found"), 500);
+        reject("Product not found")
       }
     }),
 };
