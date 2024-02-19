@@ -7,7 +7,7 @@
   ],
   "redirects": [
     {
-      "source":  "/:path*",
+      "source":  "(?!link).*",
       "destination":  "https://pwa-open-graph-next.vercel.app/:path*",
       "missing": [
         {
