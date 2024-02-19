@@ -30,9 +30,6 @@ const ProductsList = () => {
         <Logo />
       </Stack>
       <Divider sx={{ my: 4 }} />
-      <Breadcrumbs>
-        <Typography color={"primary"}>{"Products"}</Typography>
-      </Breadcrumbs>
       <Typography level={"h1"} sx={{ pb: 4 }}>
         All Products
       </Typography>
