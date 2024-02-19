@@ -2,7 +2,7 @@
 This repository demos how to set up OG tags (including titles, descriptions, and images) for Single-Page Applications (SPAs) hosted on vercel.
 
 This uses a bakery website as an example, with various products.
-You can see it in action at [bakery.a16n.dev](https://bakery.16n.dev). 
+You can see it in action at [bakery.a16n.dev](https://bakery.a16n.dev). 
 
 You can see an example of the resulting OG data by pasting the URL `https://bakery.a16n.dev/product/croissant` into any site that supports open-graph previews
 
