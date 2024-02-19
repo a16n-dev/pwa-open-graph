@@ -8,7 +8,7 @@
   "redirects": [
     {
       "source":  "/:path*",
-      "destination":  "https://pwa-open-graph-next.vercel.app/product/:path*",
+      "destination":  "https://pwa-open-graph-next.vercel.app/:path*",
       "missing": [
         {
           "type": "cookie",
