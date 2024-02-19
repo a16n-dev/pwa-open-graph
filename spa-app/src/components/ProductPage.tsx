@@ -24,7 +24,7 @@ const ProductPage = ({}: ProductPageProps) => {
   const { data } = useQuery(["products", id], () => Api.getProductById(id!));
 
   return (
-    <Container sx={{ py: 6 }}>
+    <Container sx={{ py: 4 }}>
       <Stack sx={{ alignItems: "center" }}>
         <Logo />
       </Stack>

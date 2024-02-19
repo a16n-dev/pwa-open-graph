@@ -22,7 +22,7 @@ const ProductsList = () => {
   const { data } = useQuery("products", () => Api.getAllProducts());
 
   return (
-    <Container sx={{ py: 6 }} component={"main"}>
+    <Container sx={{ py: 4 }} component={"main"}>
       <Helmet>
         <title>{"All Products"}</title>
       </Helmet>
