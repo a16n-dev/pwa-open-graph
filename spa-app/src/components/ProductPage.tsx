@@ -61,7 +61,7 @@ const ProductPage = ({}: ProductPageProps) => {
                   </Typography>
                 </Stack>
                 <Typography level={"body-lg"}>{data.description}</Typography>
-                <Stack spacing={4}>
+                <Stack direction={"row"} spacing={3}>
                   <Button variant={"outlined"} size={"lg"}>
                     Add to cart
                   </Button>
