@@ -45,6 +45,7 @@ const theme = extendTheme({
 });
 
 const RootPage = () => {
+  // Set a cookie to prevent subsequent site visits from using the open graph redirect
   useEffect(() => {
     const cookies = new Cookies(null, { path: "/" });
 
