@@ -25,7 +25,7 @@ export async function generateMetadata(
         `https://bakery-og.a16n.dev/og/product?image=${encodeURIComponent(product.imageUrl)}`
       ]
     },
-    description: product.description
+    description: product.description.substring(0, 100) + "..."
   }
 }
 
