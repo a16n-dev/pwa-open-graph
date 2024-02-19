@@ -17,17 +17,11 @@ export async function GET(request: Request) {
           style={{
             height: '100%',
             width: '100%',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
-            justifyContent: 'flex-end',
-            background: `url(${image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            padding: 24,
+
           }}
         >
-          <svg viewBox="0 0 256 256" width="128" height="128" style={{color: "white"}}>
+          <img src={`${image}`} width="100%" height="100%" style={{objectFit: "cover", objectPosition: "center"}}/>
+          <svg viewBox="0 0 256 256" width="128" height="128" style={{color: "white", position: "absolute", left: 24, bottom: 24}}>
             <path
               fillRule="evenodd"
               clipRule="evenodd"
@@ -77,6 +71,7 @@ export async function GET(request: Request) {
             <ellipse cx="129" cy="154.5" rx="1" ry="0.5" fill="currentColor" />
           </svg>
         </div>
+
 
       ),
       {

@@ -22,7 +22,7 @@ export async function generateMetadata(
     title: `${product.name} | Flourish Bakery Co.`,
     openGraph: {
       images: [
-        product.imageUrl
+        `/og/product?image=${encodeURIComponent(product.imageUrl)}`
       ]
     },
     description: product.description
