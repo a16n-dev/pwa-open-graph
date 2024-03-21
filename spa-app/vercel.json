@@ -7,8 +7,8 @@
   ],
   "redirects": [
     {
-      "source":  "/path*",
-      "destination":  "https://bakery-og.a16n.dev/path*",
+      "source":  "/:path*",
+      "destination":  "https://bakery-og.a16n.dev/:path*",
       "has": [
         {
           "type": "host",
