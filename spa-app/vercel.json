@@ -1,12 +1,6 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "redirects": [
-    {
       "source":  "/:path*",
       "destination":  "https://bakery-og.a16n.dev/:path*",
       "has": [
@@ -22,6 +16,10 @@
           "value": "1"
         }
       ]
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
-  ]
+  ],
 }
