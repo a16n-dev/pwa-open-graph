@@ -1,6 +1,5 @@
 import { ImageResponse } from 'next/og';
-// App router includes @vercel/og.
-// No need to install it.
+import Api from "@/api";
 
 export const runtime = 'edge';
 
@@ -8,8 +7,7 @@ export default async function Image(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
 
-    // ?image=<image>
-    const image = searchParams.get('image');
+    const product = await Api.getProductById(searchParams.get('id')!);
 
     return new ImageResponse(
       (
@@ -20,7 +18,7 @@ export default async function Image(request: Request) {
             display: 'flex'
           }}
         >
-          <img alt={""} src={`${image}`} width="100%" height="100%" style={{objectFit: "cover", objectPosition: "center"}}/>
+          <img alt={""} src={`${product.imageUrl}`} width="100%" height="100%" style={{objectFit: "cover", objectPosition: "center"}}/>
           <svg viewBox="0 0 256 256" width="256" height="256" style={{color: "white", position: "absolute", left: 24, bottom: 24}}>
             <path
               fillRule="evenodd"
