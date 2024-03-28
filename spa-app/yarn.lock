@@ -1123,13 +1123,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cookie@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "@types/cookie@npm:0.6.0"
-  checksum: 10c0/5b326bd0188120fb32c0be086b141b1481fec9941b76ad537f9110e10d61ee2636beac145463319c71e4be67a17e85b81ca9e13ceb6e3bb63b93d16824d6c149
-  languageName: node
-  linkType: hard
-
 "@types/estree@npm:1.0.5":
   version: 1.0.5
   resolution: "@types/estree@npm:1.0.5"
@@ -1655,13 +1648,6 @@ __metadata:
   version: 2.0.0
   resolution: "convert-source-map@npm:2.0.0"
   checksum: 10c0/8f2f7a27a1a011cc6cc88cc4da2d7d0cfa5ee0369508baae3d98c260bb3ac520691464e5bbe4ae7cdf09860c1d69ecc6f70c63c6e7c7f7e3f18ec08484dc7d9b
-  languageName: node
-  linkType: hard
-
-"cookie@npm:^0.6.0":
-  version: 0.6.0
-  resolution: "cookie@npm:0.6.0"
-  checksum: 10c0/f2318b31af7a31b4ddb4a678d024514df5e705f9be5909a192d7f116cfb6d45cbacf96a473fa733faa95050e7cff26e7832bb3ef94751592f1387b71c8956686
   languageName: node
   linkType: hard
 
@@ -3500,7 +3486,6 @@ __metadata:
     react-query: "npm:^3.39.3"
     react-router-dom: "npm:^6.22.1"
     typescript: "npm:^5.2.2"
-    universal-cookie: "npm:^7.0.2"
     vite: "npm:^5.1.0"
   languageName: unknown
   linkType: soft
@@ -3697,16 +3682,6 @@ __metadata:
   dependencies:
     imurmurhash: "npm:^0.1.4"
   checksum: 10c0/cb811d9d54eb5821b81b18205750be84cb015c20a4a44280794e915f5a0a70223ce39066781a354e872df3572e8155c228f43ff0cce94c7cbf4da2cc7cbdd635
-  languageName: node
-  linkType: hard
-
-"universal-cookie@npm:^7.0.2":
-  version: 7.0.2
-  resolution: "universal-cookie@npm:7.0.2"
-  dependencies:
-    "@types/cookie": "npm:^0.6.0"
-    cookie: "npm:^0.6.0"
-  checksum: 10c0/58855304af34f6345f867099febe4754fea30ab518b120719529ae047a11a8f7a4ba89c8895aa533e41df2e3b4457160a021ae71c6cf2eaefce231f605c43f17
   languageName: node
   linkType: hard
 

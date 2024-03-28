@@ -14,6 +14,11 @@
           "type": "cookie",
           "key": "visited",
           "value": "1"
+        },
+        {
+          "type": "header",
+          "key": "Referer",
+          "value": "*"
         }
       ]
     },
