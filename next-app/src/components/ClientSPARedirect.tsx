@@ -9,7 +9,6 @@ import Cookies from "universal-cookie";
 const ClientSPARedirect = () => {
 
   useEffect(() => {
-
     const cookies = new Cookies(null, {
       path: '/',
       domain: window.location.hostname.replace(/.*?(?=\..*?\..*)/, ''),
@@ -18,9 +17,7 @@ const ClientSPARedirect = () => {
 
     cookies.set('visited', '1');
 
-    const targetUrl = window.location.href.replace(window.location.origin, process.env.NEXT_PUBLIC_SPA_URL!);
-
-    window.location.href = targetUrl
+    window.location.reload()
   }, []);
 
   return null;
