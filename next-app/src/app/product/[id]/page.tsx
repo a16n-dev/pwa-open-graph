@@ -20,11 +20,6 @@ export async function generateMetadata(
 
   return {
     title: `${product.name} | Flourish Bakery Co.`,
-    openGraph: {
-      images: [
-        `/og/product?image=${encodeURIComponent(product.imageUrl)}`
-      ]
-    },
     description: product.description.substring(0, 100) + "..."
   }
 }
