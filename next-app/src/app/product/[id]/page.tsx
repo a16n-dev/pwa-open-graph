@@ -12,7 +12,7 @@ export async function generateMetadata(
   { params }: Props,
 ): Promise<Metadata> {
 
-  const product = await Api.getProductById(params.id!);
+  const product = await Api.getProductById(params.id);
 
   if(!product){
    return {}
@@ -22,7 +22,7 @@ export async function generateMetadata(
     title: `${product.name} | Flourish Bakery Co.`,
     openGraph: {
       images: [
-        `https://bakery-og.a16n.dev/og/product?image=${encodeURIComponent(product.imageUrl)}`
+        `/og/product?image=${encodeURIComponent(product.imageUrl)}`
       ]
     },
     description: product.description.substring(0, 100) + "..."
