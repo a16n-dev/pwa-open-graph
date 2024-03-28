@@ -3,12 +3,6 @@
     {
       "source":  "/:path*",
       "destination":  "https://bakery-og.a16n.dev/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "bakery.a16n.dev"
-        }
-      ],
       "missing": [
         {
           "type": "cookie",
