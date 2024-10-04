@@ -17,4 +17,4 @@ After:
 
 ## Overview
 At a top level this utilises a seperate Next.js project. A user's first request to the SPA site will be routed through 
-the Next.js site instead, which will serve the open graph data.
+the Next.js site instead, which will serve the open graph data. All subsequent requests to the SPA will be cookied to bypass the redirect.
